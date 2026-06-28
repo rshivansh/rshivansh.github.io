@@ -182,65 +182,82 @@ HDR for smartphone photography; SDR for smartphone photography; and Image regist
 
       <div class = "row">
         
-        <table class = 'about-edu'>
-            <tr>
-              
-              
-              <td align="center" width="16%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
-                <a href="http://dtu.ac.in/"><img src = "/img/DTU-logo.png" width="40%"></a>
-              </td>
-              
-              <td align="center" width="16%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
-                <a href="http://www.iitd.ac.in/"><img src = "/img/logo-IITD.jpg" width="40%"></a>
-              </td>
-              
+        <style>
+.edu-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin:1.5em auto .5em;max-width:100%;}
+.edu-card{flex:1 1 120px;max-width:160px;display:flex;flex-direction:column;align-items:center;text-align:center;
+  padding:18px 12px 16px;border-radius:12px;background:#fff;border:1px solid #ececf1;
+  box-shadow:0 1px 2px rgba(0,0,0,.04);text-decoration:none;
+  transition:transform .2s ease,box-shadow .2s ease;}
+.edu-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,.08);text-decoration:none;}
+.edu-logo{height:54px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.edu-logo img{max-height:54px;max-width:92px;object-fit:contain;filter:grayscale(100%);opacity:.78;
+  transition:filter .25s ease,opacity .25s ease;}
+.edu-card:hover .edu-logo img{filter:grayscale(0);opacity:1;}
+.edu-role{font-weight:700;font-size:.86rem;line-height:1.25;color:#2b2b35;}
+.edu-place{font-size:.8rem;color:#555;margin-top:3px;}
+.edu-date{font-size:.74rem;color:#8a8a93;margin-top:5px;}
+.edu-card.is-current{border-color:#7c3aed;background:linear-gradient(180deg,#faf7ff 0%,#fff 60%);
+  box-shadow:0 4px 16px rgba(124,58,237,.14);}
+.edu-card.is-current .edu-logo img{filter:grayscale(0);opacity:1;}
+.edu-card.is-current .edu-role{color:#5b21b6;}
+.edu-now{display:inline-block;margin-bottom:10px;padding:2px 10px;font-size:.64rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#7c3aed;border-radius:999px;}
+@media (max-width:480px){.edu-card{flex-basis:40%;max-width:none;}}
+</style>
 
-              <td align="center" width="16%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
-                <a href="http://www.iitk.ac.in/"><img src = "/img/kanpur.jpg" width="40%"></a>
-              </td>
-              
-              
-              <td align="center" width="16%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
-                <a href="http://umanitoba.ca//"><img src = "/img/umanitoba.png" width="40%"></a>
-              </td>
-              
-              <td align="center" width="16%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
-                <a href="https://www.psu.edu//"><img src = "/img/psu.png" width="40%"></a>
-              </td>
-            
-              
-               <td align="center" width="16%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
-                <a href="https://www.qualcomm.com/"><img src = "/img/q.png" width="40%"></a>
+        <div class="edu-strip">
 
-                 
-               <td align="center" width="16%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
-                <a href="https://www.glass-imaging.com//"><img src = "/img/GlassLogo-HighResWhiteBG.png" width="40%"></a>
-                 
-              </td>
-             
-            </tr>
+          <a class="edu-card" href="http://dtu.ac.in/" target="_blank">
+            <div class="edu-logo"><img src="/img/DTU-logo.png" alt="DTU"></div>
+            <div class="edu-role">B.Tech, ECE</div>
+            <div class="edu-place">Delhi College of Engineering</div>
+            <div class="edu-date">2015 &ndash; 2019</div>
+          </a>
 
-            <tr>
-                
-                
-                <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">B.Tech, ECE <br>DCE<br>2015 - 2019</td>
-                
-                
-                <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Research Intern <br> IIT Delhi<br>Summer 2017</td>
-                
-                <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Research Intern<br>IIT Kanpur<br>Winter 2017</td>
-               
-              <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Research Intern<br>University of Manitoba<br>Summer 2018</td>
-              
-              <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">M.S in Inofrmatics<br>Penn State University<br>Aug'19 - May;21</td>
-              
-              <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Senior Machine Learning Engineer<br> Qualcomm, San-Diego <br> June'21 - May'24 </td>
+          <a class="edu-card" href="http://www.iitd.ac.in/" target="_blank">
+            <div class="edu-logo"><img src="/img/logo-IITD.jpg" alt="IIT Delhi"></div>
+            <div class="edu-role">Research Intern</div>
+            <div class="edu-place">IIT Delhi</div>
+            <div class="edu-date">Summer 2017</div>
+          </a>
 
-               <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Senior Research Engineer<br> Glass Imaging, San Mateo <br> May'24 - Present </td>
-              
-          </tr>
-              
-          </table>
+          <a class="edu-card" href="http://www.iitk.ac.in/" target="_blank">
+            <div class="edu-logo"><img src="/img/kanpur.jpg" alt="IIT Kanpur"></div>
+            <div class="edu-role">Research Intern</div>
+            <div class="edu-place">IIT Kanpur</div>
+            <div class="edu-date">Winter 2017</div>
+          </a>
+
+          <a class="edu-card" href="http://umanitoba.ca/" target="_blank">
+            <div class="edu-logo"><img src="/img/umanitoba.png" alt="University of Manitoba"></div>
+            <div class="edu-role">Research Intern</div>
+            <div class="edu-place">University of Manitoba</div>
+            <div class="edu-date">Summer 2018</div>
+          </a>
+
+          <a class="edu-card" href="https://www.psu.edu/" target="_blank">
+            <div class="edu-logo"><img src="/img/psu.png" alt="Penn State University"></div>
+            <div class="edu-role">M.S. in Informatics</div>
+            <div class="edu-place">Penn State University</div>
+            <div class="edu-date">Aug'19 &ndash; May'21</div>
+          </a>
+
+          <a class="edu-card" href="https://www.qualcomm.com/" target="_blank">
+            <div class="edu-logo"><img src="/img/q.png" alt="Qualcomm"></div>
+            <div class="edu-role">Senior Machine Learning Engineer</div>
+            <div class="edu-place">Qualcomm, San Diego</div>
+            <div class="edu-date">June'21 &ndash; May'24</div>
+          </a>
+
+          <a class="edu-card is-current" href="https://www.glass-imaging.com/" target="_blank">
+            <span class="edu-now">Now</span>
+            <div class="edu-logo"><img src="/img/GlassLogo-HighResWhiteBG.png" alt="Glass Imaging"></div>
+            <div class="edu-role">Senior Research Engineer</div>
+            <div class="edu-place">Glass Imaging, San Mateo</div>
+            <div class="edu-date">May'24 &ndash; Present</div>
+          </a>
+
+        </div>
         
       </div>
     
